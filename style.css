@@ -1,17 +1,66 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 header {
+  margin: 4rem 0;
+  border-bottom: 2px black solid;
+  margin: 3rem 1rem 1rem 1rem;
+}
+
+h1,
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .details {
-  border: 2px black solid;
-  margin: 1rem;
+  background-color: black;
+  border-radius: 2rem;
+  width: 90%;
   display: none;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .details p {
   text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin: auto 0;
 }
 
 .show {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  grid-gap: 1rem;
+  position: relative;
+}
+
+.actorButton {
+  margin: 1rem;
+  border: 1px black solid;
+  text-align: center;
+}
+
+.actorButton:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 769px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
