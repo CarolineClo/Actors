@@ -9,13 +9,18 @@
   </head>
   <body>
     <header><h1>Actors and their famous roles</h1></header>
-
-    <section id="actor">
-      <a href=""><p>Name</p></a>
-    </section>
-    <section id="details">
-      <p>Film</p>
-    </section>
+    <main>
+      <template id="actorFilm">
+        <article>
+          <section class="actor">
+            <button class="actorButton"><p class="actorName">Name</p></button>
+          </section>
+          <section class="details">
+            <p class="filmTitle">Film</p>
+          </section>
+        </article>
+      </template>
+    </main>
   </body>
   <script src="main.js"></script>
 </html>

@@ -1,21 +1,17 @@
 header {
   text-align: center;
 }
-#actor {
-  border: 2px black solid;
-}
 
-#actor p,
-a {
-  text-align: center;
-  text-decoration: none;
-}
-
-#film {
+.details {
   border: 2px black solid;
   margin: 1rem;
+  display: none;
 }
 
-#film p {
+.details p {
   text-align: center;
+}
+
+.show {
+  display: block;
 }
