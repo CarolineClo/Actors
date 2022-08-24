@@ -1,0 +1,21 @@
+header {
+  text-align: center;
+}
+#actor {
+  border: 2px black solid;
+}
+
+#actor p,
+a {
+  text-align: center;
+  text-decoration: none;
+}
+
+#film {
+  border: 2px black solid;
+  margin: 1rem;
+}
+
+#film p {
+  text-align: center;
+}
